@@ -1,11 +1,11 @@
-# ngx-str-replace-pipe
+# ngx-str-pipe
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install ngx-str-replace-pipe --save
+$ npm install ngx-str-pipe --save
 ```
 
 ## Consuming your library
@@ -13,7 +13,7 @@ $ npm install ngx-str-replace-pipe --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install ngx-str-replace-pipe
+$ npm install ngx-str-pipe
 ```
 
 and then from your Angular `AppModule`:
@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ngx-str-replace-pipe';
+import { NgxStrPipeModule } from 'ngx-str-pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { SampleModule } from 'ngx-str-replace-pipe';
   ],
   imports: [
     BrowserModule,
-
+    NgxStrPipeModule,
     // Specify your library as an import
     LibraryModule
   ],
@@ -48,9 +48,17 @@ Once your library is imported, you can use its components, directives and pipes 
 ```xml
 <!-- You can now use your library component in app.component.html -->
 <h1>
-  {{title}}
+  {{title  }}
 </h1>
-<sampleComponent></sampleComponent>
+
+<h4>Simple String Replace</h4>
+{{ "Hello World" | replace: 'World': 'Angular' }}
+
+
+<h4>Simple String Replace At String Index</h4>
+{{ "Hello World" | replaceAt: 3: 'Angular' }}
+
+
 ```
 
 ## Development
