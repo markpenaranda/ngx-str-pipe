@@ -13,6 +13,7 @@ import { NgxStrPipeModule }  from 'ngx-str-replace-pipe';
   template: `
     <h1>{{ "HELLO" | replace : 'LO':'LU' }}</h1>
     <h1>{{ "HELLOWORLD" | replaceAt : 3: 'xxxx'}}</h1>
+    <h1>{{ "HELLOWORLD" | replaceAt : -4: 'xxxx': true}}</h1>
     `
 })
 class AppComponent {}

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/markpenaranda/ngx-str-replace-pipe"
+    "url": "https://github.com/markpenaranda/ngx-str-pipe"
   },
   "author": {
     "name": "MJP",
@@ -14,12 +14,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/markpenaranda/ngx-str-replace-pipe/issues"
+    "url": "https://github.com/markpenaranda/ngx-str-pipe/issues"
   },
-  "main": "ngx-str-replace-pipe.umd.js",
-  "module": "ngx-str-replace-pipe.js",
-  "jsnext:main": "ngx-str-replace-pipe.js",
-  "typings": "ngx-str-replace-pipe.d.ts",
+  "main": "ngx-str-pipe.umd.js",
+  "module": "ngx-str-pipe.js",
+  "jsnext:main": "ngx-str-pipe.js",
+  "typings": "ngx-str-pipe.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
     "rxjs": "^5.1.0",
